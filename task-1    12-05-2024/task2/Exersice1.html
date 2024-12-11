@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>task2-1</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+        form {
+            max-width: 400px;
+            margin: auto;
+            padding: 20px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            background-color: #f9f9f9;
+        }
+        label {
+            display: block;
+            margin-bottom: 8px;
+            font-weight: bold;
+        }
+        input, select, textarea {
+            width: 100%;
+            padding: 8px;
+            margin-bottom: 15px;
+            border: 1px solid #ccc;
+            border-radius: 3px;
+            box-sizing: border-box;
+        }
+        input[type="radio"], input[type="checkbox"] {
+            width: auto;
+            margin-right: 5px;
+        }
+        input[type="checkbox"]:checked {
+            accent-color: green; 
+        }
+        .button-container {
+            display: flex;
+            justify-content: center; 
+        }
+        button {
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px 15px;
+            border: none;
+            border-radius: 3px;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #45a049;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Register Form</h1>
+
+    <form action="#" method="post">
+        <label for="userid">User Id:</label>
+        <input type="text" id="userid" name="userid" required>
+
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password" required>
+
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required>
+
+        <label for="address">Address:</label>
+        <input type="text" id="Address" name="Address" required>
+        
+        <label for="country">Country:</label>
+        <select id="country" name="country" required>
+            <option value="">Select a country</option>
+            <option value="us">United States</option>
+            <option value="uk">United Kingdom</option>
+            <option value="ca">Canada</option>
+            <option value="au">Australia</option>
+            <option value="other">Other</option>
+        </select>
+
+        <label for="zipcode">ZIP Code:</label>
+        <input type="text" id="zipcode" name="zipcode" required>
+
+        <label for="email">Mail:</label>
+        <input type="email" id="email" name="email" required>
+
+        <label>Sex:</label>
+        <input type="radio" id="male" name="sex" value="male" required>
+        <label for="male" style="display: inline;">Male</label>
+        <input type="radio" id="female" name="sex" value="female">
+        <label for="female" style="display: inline;">Female</label>
+
+        <label>Language:</label>
+        <input type="checkbox" id="english" name="language" value="english" checked>
+        <label for="english" style="display: inline;">English</label>
+        <input type="checkbox" id="nonenglish" name="language" value="nonenglish">
+        <label for="nonenglish" style="display: inline;">Non-English</label>
+
+        <label for="about">About:</label>
+        <textarea id="about" name="about" rows="4"></textarea>
+
+        <div class="button-container">
+            <button type="submit">Submit</button>
+        </div>
+    </form>
+
+</body>
+</html>

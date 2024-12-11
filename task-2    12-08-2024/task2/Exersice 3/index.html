@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Zig-Zag Boxes</title>
+  <style>
+    /* Container for the boxes */
+    .container {
+        margin-top: 40px;
+      position: relative;
+    }
+
+    /* General box styling */
+    .box {
+      width: 50px;
+      height: 50px;
+      margin: 5px;
+      display: inline-block;
+    }
+
+    /* Yellow box style */
+    .yellow {
+      background-color: yellow;
+    }
+
+    /* Green box style */
+    .green {
+      background-color: green;
+    }
+
+    /* Create the zigzag effect */
+    .box:nth-child(odd) {
+      position: relative;
+      top: -0px; /* Move the odd boxes up */
+    }
+
+    .box:nth-child(even) {
+      position: relative;
+      top: 20px; /* Move the even boxes down */
+    }
+  </style>
+</head>
+<body>
+
+  <h2>Zig-zag Boxes</h2>
+
+  <hr/>
+
+  <div class="container">
+    <div class="box yellow"></div>
+    <div class="box green"></div>
+    <div class="box yellow"></div>
+    <div class="box green"></div>
+    <div class="box yellow"></div>
+    <div class="box green"></div>
+    <div class="box yellow"></div>
+    <div class="box green"></div>
+    <div class="box yellow"></div>
+    <div class="box green"></div>
+  </div>
+
+</body>
+</html>

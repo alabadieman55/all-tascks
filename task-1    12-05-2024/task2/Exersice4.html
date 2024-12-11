@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>task2-4</title>
+  <style>
+
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #FFFFDC; 
+      margin: 0;
+      padding: 0;
+      display: flex;
+      justify-content: center; 
+      align-items: center; 
+      height: 100vh; 
+    }
+
+    
+    form {
+      width: 100%;
+      max-width: 600px; 
+      background-color: white; 
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+    }
+
+    h2 {
+      text-align: center;
+      color: #4CAF50; 
+    }
+
+    fieldset {
+      margin-bottom: 20px;
+      border: 2px solid #4CAF50;  
+      border-radius: 5px;
+      padding: 15px;
+    }
+
+    legend {
+      font-weight: bold;
+      color: #4CAF50; 
+      padding: 0 10px;
+    }
+
+    label {
+      display: block;
+      margin-bottom: 8px;
+      font-weight: bold;
+    }
+
+    input, select, button {
+      width: 100%;
+      padding: 10px;
+      margin-bottom: 15px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      box-sizing: border-box;
+    }
+
+    input[type="radio"] {
+      width: auto;
+      margin-right: 5px;
+    }
+
+    button {
+      background-color: #4CAF50;
+      color: white;
+      font-size: 16px;
+      cursor: pointer;
+      border: none;
+    }
+
+    button:hover {
+      background-color: #45a049;
+    }
+  </style>
+</head>
+<body>
+  <form>
+    <h2>Registration Form</h2>
+    <fieldset>
+      <legend>Personal Details</legend>
+      <label for="first-name">First Name:</label>
+      <input type="text" id="first-name" name="first-name" placeholder="Enter your first name">
+
+      <label for="last-name">Last Name:</label>
+      <input type="text" id="last-name" name="last-name" placeholder="Enter your last name">
+
+      <label for="email">Email Address:</label>
+      <input type="email" id="email" name="email" placeholder="Enter your email address">
+
+      <label>Gender:</label>
+      <input type="radio" id="male" name="gender" value="male">
+      <label for="male" style="display: inline;">Male</label>
+      <input type="radio" id="female" name="gender" value="female">
+      <label for="female" style="display: inline;">Female</label>
+    </fieldset>
+
+    <fieldset>
+      <legend>City</legend>
+      <label for="city">City:</label>
+      <select id="city" name="city">
+        <option value="amman">Amman</option>
+      </select>
+    </fieldset>
+
+    <button type="submit">Subscribe</button>
+  </form>
+</body>
+</html>
