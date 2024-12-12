@@ -1,0 +1,27 @@
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  text-align: center;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 10px;
+  grid-auto-flow: dense; 
+}
+
+.box {
+  background-color: yellow;
+  padding: 30px;
+  font-size: 24px;
+}
+
+
+.box:nth-child(3) {
+  order: 1; 
+}
+
+.box:nth-child(5) {
+  order: -1; 
+}

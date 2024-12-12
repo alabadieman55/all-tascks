@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <style>
+        body {
+            background-color: #1070106c;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+
+        .calculator {
+            background-color: #54c3f7;
+            border-radius: 10px;
+            padding: 20px;
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 10px;
+        }
+
+        .display {
+            grid-column: 1/5;
+            background-color: #e1f5e1;
+            border: none;
+            padding: 10px;
+            font-size: 20px;
+            text-align: right;
+            border-radius: 5px;
+        }
+
+        .button {
+            background-color: #e1f5e1;
+            border: none;
+            padding: 10px;
+            font-size: 20px;
+            text-align: center;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        .operator {
+            background-color: #bfff11;
+        }
+
+        .clear {
+            background-color: #f04646;
+        }
+    </style>
+</head>
+<body>
+    <div class="calculator">
+        <input type="text" class="display" readonly>
+        <button class="button">1</button>
+        <button class="button">2</button>
+        <button class="button">3</button>
+        <button class="button operator">+</button>
+        <button class="button">4</button>
+        <button class="button">5</button>
+        <button class="button">6</button>
+        <button class="button operator">-</button>
+        <button class="button">7</button>
+        <button class="button">8</button>
+        <button class="button">9</button>
+        <button class="button operator">*</button>
+        <button class="button clear">C</button>
+        <button class="button">0</button>
+        <button class="button r">=</button>
+        <button class="button operator">/</button>
+    </div>
+</body>
+</html>

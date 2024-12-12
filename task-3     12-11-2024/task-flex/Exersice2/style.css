@@ -1,0 +1,61 @@
+body {
+    background: #fff;
+    margin: 0;
+}
+
+.content {
+    border: 5px solid #bb8217;
+    width: 100%;
+}
+
+.flex-container {
+    background: #fff;
+    display: flex;
+    height: 100vh;
+    justify-content: center; /* محاذاة أفقية في المنتصف */
+    align-items: center;   /* محاذاة عمودية في المنتصف */
+}
+
+.item {
+    text-align: center;
+    height: 50px;
+    width: 50px;
+    margin: 5px; /* إضافة مسافة بين العناصر */
+    flex-grow: 0; /* تعطيل التمدد */
+}
+
+.first {
+    background-color: green;
+}
+
+.second {
+    background-color: yellow;
+}
+
+.third {
+    background-color: blueviolet;
+}
+
+.fourth {
+    background-color: grey;
+}
+
+.fifth {
+    background-color: blue;
+}
+
+.sixth {
+    background-color: orange;
+}
+
+.seventh {
+    background-color: rgb(199, 85, 133);
+}
+
+.eighth {
+    background-color: red;
+}
+
+.ninth {
+    background-color: rgb(83, 5, 5);
+}
